@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    width: 100%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 22%, rgba(223,171,207,1) 53%, rgba(148,153,233,1) 100%);
+    padding: 1vw;
+    margin: -1vw;
+    position: relative;
+
+    img {
+        width: 90px;
+        height: 90px;
+        justify-self: flex-start;
+        position: absolute;
+        left: 1vw;
+    }
+}
+
+.navbar{ 
+
+    display: flex;
+
+    a{
+        color: white;
+        text-decoration: none;
+        margin: 2vw;
+        transition: color 0.3s;
+        position: relative;
+
+
+    }
+    a::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 0;
+        height: 1.9px;
+        background: #000;
+        transition: 0.3s;
+    }
+    
+    a:hover::after{
+        width: 100%;
+    }
+}
