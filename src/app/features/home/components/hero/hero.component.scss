@@ -1,5 +1,29 @@
-.img-hero{
-    width: 20vw;
+$margin_top: 5vw;
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    margin-top: $margin_top;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    width: 100%;                   
+}
+
+.content {
+    max-width: 60%; 
+    margin-left: 3vw;  
+}
+
+.img-hero {
+    width: 30vw;     
     height: auto;
-    margin: 2vw;
+    border-radius: 5px 50px 30px;
+    margin-right: 3vw;  
 }
