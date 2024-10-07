@@ -1,48 +1,64 @@
-.header{
+.header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
+    align-items: center; 
     font-size: x-large;
     width: 100%;
-    background: radial-gradient(circle, rgba(238,174,202,1) 22%, rgba(223,171,207,1) 53%, rgba(148,153,233,1) 100%);
+    background: radial-gradient(
+        circle, 
+        rgba(178, 168, 253, 1) 22%,  /* #b2a8fd */
+        rgba(134, 120, 249, 1) 53%,  /* #8678f9 */
+        rgba(199, 210, 254, 1) 75%,  /* #c7d2fe */
+        rgba(154, 141, 253, 1) 100%  /* #9a8dfd */
+    );
     padding: 1vw;
-    margin: -1vw;
-    position: relative;
-
-    img {
-        width: 90px;
-        height: 90px;
-        justify-self: flex-start;
-        position: absolute;
-        left: 1vw;
-    }
+    box-sizing: border-box; 
+    border-radius: 10px;
 }
 
-.navbar{ 
+.header img {
+    max-width: 100px; 
+    width: auto; 
+    height: auto; 
+    flex-shrink: 0; 
+}
 
+.navbar {
     display: flex;
+    gap: 2vw; 
+}
 
-    a{
-        color: white;
-        text-decoration: none;
-        margin: 2vw;
-        transition: color 0.3s;
-        position: relative;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5vw; 
+    transition: color 0.3s;
+}
 
+.navbar a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 1.9px;
+    background: #000;
+    transition: 0.3s;
+}
 
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header img {
+        max-width: 70px; 
     }
-    a::after {
-        position: absolute;
-        content: '';
-        left: 0;
-        bottom: 0;
-        display: block;
-        width: 0;
-        height: 1.9px;
-        background: #000;
-        transition: 0.3s;
-    }
-    
-    a:hover::after{
-        width: 100%;
+
+    .navbar a {
+        margin: 1vw; 
     }
 }
