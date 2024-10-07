@@ -1,6 +1,6 @@
 # TallandProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8. (Upgraded to 18.2.7)
 
 ## Development server
 
