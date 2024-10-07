@@ -19,6 +19,32 @@ body {
 .content {
     max-width: 60%; 
     margin-left: 3vw;  
+
+    h1{
+        span{
+            a{
+                color: red;
+                text-decoration: none;
+                transition: color 0.3s;
+                position: relative;
+            }
+            a::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                display: block;
+                width: 0;
+                height: 1.9px;
+                background: #000;
+                transition: 0.3s;
+            }
+            
+            a:hover::after{
+                width: 100%;
+            }
+        }
+    }
 }
 
 .img-hero {
