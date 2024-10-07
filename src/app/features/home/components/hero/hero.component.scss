@@ -22,11 +22,31 @@ body {
 
     h1{
         span{
+            
             a{
                 color: red;
                 text-decoration: none;
                 transition: color 0.3s;
                 position: relative;
+                background: radial-gradient(
+                    circle at 100%,
+                    #b2a8fd,
+                    #8678f9 50%,
+                    #c7d2fe 75%,
+                    #9a8dfd 75%
+                );
+                font-weight: 600;
+                background-size: 200% auto;
+                color: #000;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: animatedTextGradient 1.5s linear infinite;
+                }
+
+                @keyframes animatedTextGradient {
+                to {
+                    background-position: 200% center;
+                }
             }
             a::after {
                 position: absolute;

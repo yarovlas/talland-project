@@ -1,0 +1,43 @@
+{
+  "hash": "33ddc996",
+  "configHash": "b5cec53a",
+  "lockfileHash": "87507188",
+  "browserHash": "06da8269",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "3e479e56",
+      "needsInterop": false
+    },
+    "@angular/material/button": {
+      "src": "../../../../../../node_modules/@angular/material/fesm2022/button.mjs",
+      "file": "@angular_material_button.js",
+      "fileHash": "7cf8c991",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "5d9afad2",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "b697e24c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-4WHD252D": {
+      "file": "chunk-4WHD252D.js"
+    },
+    "chunk-WPMGVRM4": {
+      "file": "chunk-WPMGVRM4.js"
+    },
+    "chunk-NZNPLROE": {
+      "file": "chunk-NZNPLROE.js"
+    }
+  }
+}
